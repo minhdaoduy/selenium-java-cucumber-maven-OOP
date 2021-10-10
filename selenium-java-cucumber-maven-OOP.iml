@@ -11,6 +11,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-java:6.10.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-core:6.10.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-gherkin:6.10.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-gherkin-messages:6.10.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:messages:15.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:tag-expressions:3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-expressions:10.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:datatable:3.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-plugin:6.10.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:docstring:6.10.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:html-formatter:13.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:create-meta:4.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:cucumber-testng:1.2.5" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:cucumber-core:1.2.5" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:cucumber-html:0.2.3" level="project" />
@@ -87,18 +100,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.thoughtworks.xstream:xstream:1.4.17" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.github.x-stream:mxparser:1.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-core:6.10.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-gherkin:6.10.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-gherkin-messages:6.10.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:messages:14.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:tag-expressions:3.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-expressions:10.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:datatable:3.5.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-plugin:6.10.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:docstring:6.10.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:html-formatter:12.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:create-meta:3.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-java:6.10.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe:config:1.3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.imgscalr:imgscalr-lib:4.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.awaitility:awaitility:4.0.3" level="project" />
@@ -237,9 +238,10 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: javax.activation:activation:1.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.serenity-bdd:serenity-junit:2.4.51" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:7.4.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.beust:jcommander:1.78" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.webjars:jquery:3.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.testng:testng:7.4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.beust:jcommander:1.78" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:jquery:3.5.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-simple:1.7.30" level="project" />
+    <orderEntry type="library" name="io.cucumber.java8" level="project" />
   </component>
 </module>

@@ -44,11 +44,15 @@ public class WebDriverManager {
 	
 	private WebDriver createLocalDriver() {
 		switch(driverType){
-		case FIREFOX : driver = new FirefoxDriver();
+		case FIREFOX :
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "/driver/geckodriver");
+			driver = new FirefoxDriver();
 		    break;
-		case CHROME : driver = new ChromeDriver();
+		case CHROME :
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/driver/chromedriver_mac_2");
+			driver = new ChromeDriver();
 		    break;
-		case INTERNETEXPLORER : driver = new InternetExplorerDriver();
+//		case INTERNETEXPLORER : driver = new InternetExplorerDriver();
 		}
 		
 		if(FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize()) 
@@ -64,11 +68,11 @@ public class WebDriverManager {
 		caps.setCapability("platform", "macOS 10.13");
 		caps.setCapability("version", "latest");
 		driver = new RemoteWebDriver(new java.net.URL(URL), caps);
-		if(FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize()) 
+		if(FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize())
 			driver.manage().window().maximize();
 		    driver.manage().timeouts().implicitlyWait(FileReaderManager.getInstance().getConfigReader().getImplicitlyWait(), TimeUnit.SECONDS);
 		return driver;
-		
+
 		//throw new RuntimeException("RemoteWebDriver is not yet implemented");
 	}
 	

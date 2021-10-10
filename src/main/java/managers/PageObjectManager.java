@@ -2,13 +2,7 @@ package managers;
 
 import org.openqa.selenium.WebDriver;
 
-import pageobjects.APHomePage;
-import pageobjects.APMyAccountPage;
-import pageobjects.APOrderConfirmationPage;
-import pageobjects.APOrderPage;
-import pageobjects.APSignInPage;
-import pageobjects.APTshirtsSectionPage;
-import pageobjects.LoginPage;
+import pageobjects.*;
 
 public class PageObjectManager {
 	private WebDriver driver;
@@ -19,12 +13,16 @@ public class PageObjectManager {
 	private APOrderPage orderPage;
 	private APSignInPage signInPage;
 	private APTshirtsSectionPage tshirtsSectionPage;
+	private Booking booking;
 	
 	
 	public PageObjectManager(WebDriver driver){
 		this.driver = driver;
 	}
 	
+	public Booking getBooking(){
+		return (booking == null) ? booking = new Booking(driver) : booking;
+	}
 	public APHomePage getAPHomePage(){
 		return (homePage == null) ? homePage = new APHomePage(driver) : homePage;
 	}

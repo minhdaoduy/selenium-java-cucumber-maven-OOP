@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions
-(features="src/test/resources/functionalTests",
+//(features="src/test/resources/functionalTests",
+(features="src/test/resources/functionalTests/Booking.feature",
 glue={"stepDefinitions"},
 plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
 		 "junit:target/cucumber-reports/Cucumber.xml",

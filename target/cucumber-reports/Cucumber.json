@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2154436985,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Booking scenario",
+        "description": "",
+        "id": "booking-feature;booking-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 235391134,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3420921536,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Access booking page",
+            "match": {
+              "location": "BookingSteps.access_booking_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 60627,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Do some thing",
+            "match": {
+              "location": "BookingSteps.do_some_thing()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40363,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify something",
+            "match": {
+              "location": "BookingSteps.verify_something()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Booking feature",
+    "description": "",
+    "id": "booking-feature",
+    "keyword": "Feature",
+    "uri": "src/test/resources/functionalTests/Booking.feature"
+  }
+]
