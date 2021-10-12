@@ -1,36 +1,27 @@
 package stepDefinitions;
 
 import cucumber.TestContext;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import managers.FileReaderManager;
+import cucumber.api.java8.En;
 import pageobjects.Booking;
-import testDataTypes.Customer;
 
-public class BookingSteps {
+public class BookingSteps implements En {
+  TestContext testContext;
+  Booking booking;
 
-	TestContext testContext;
-	Booking booking;
+  public BookingSteps(TestContext context) {
 
-	public BookingSteps(TestContext context) {
-		testContext = context;
-		booking = testContext.getPageObjectManager().getBooking();
-	}
+    testContext = context;
+    booking = testContext.getPageObjectManager().getBooking();
 
-	@Given("^Access booking page$")
-	public void access_booking_page() throws Throwable {
-		booking.navigateTo_BookingPage();
-	}
+    Given(
+        "^Access booking page$",
+        () -> {
+          System.out.println("test");
+          booking.navigateTo_BookingPage();
+        });
 
-	@When("^Do some thing$")
-	public void do_some_thing() throws Throwable {
-//		loginPage.clickLoginButton();
-	}
+    When("^Do some thing$", () -> {});
 
-	@Then("^Verify something$")
-	public void verify_something() throws Throwable {
-//		loginPage.verifyReaderPageTitle();
-	}
-
+    Then("^Verify something$", () -> {});
+  }
 }

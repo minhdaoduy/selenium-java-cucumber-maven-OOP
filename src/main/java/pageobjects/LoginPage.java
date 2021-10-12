@@ -31,8 +31,9 @@ public class LoginPage{
 		
 	public String loginPageTitle = "Log In — WordPress.com";
 	
-	public String readerPageTitle = "Following ‹ Reader — WordPress.com";
-	
+//	public String readerPageTitle = "Following ‹ Reader — WordPress.com";
+	public String readerPageTitle = "My Home ‹ Site Title — WordPress.com";
+
 	public void navigateTo_HomePage() {
 		driver.get(FileReaderManager.getInstance().getConfigReader().getWordPressApplicationUrl());
 	}

@@ -1,8 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="5.810851">
-<testcase classname="Booking feature" name="Booking scenario" time="5.810851">
-<system-out><![CDATA[Given Access booking page...................................................passed
-When Do some thing..........................................................passed
-Then Verify something.......................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="62.788373">
+<testcase classname="Purchase feature" name="Purchase successfull scenario" time="62.788373">
+<system-out><![CDATA[Given I want to go to automationpractice website............................passed
+And verify the mystore title................................................passed
+When I click on sign in.....................................................passed
+Then I should see the login page............................................passed
+When I enter "Minh" login credentials.......................................passed
+Then I should see the my account page.......................................passed
+When I choose the option women and choose tshirts...........................passed
+Then I should see the tshirts section.......................................passed
+When I choose medium size...................................................passed
+And I add the faded short sleeve tshirt to the cart.........................passed
+And I choose proceed to checkout on tshirts selection page..................passed
+Then I should see my order page.............................................passed
+When I choose proceed to checkout on order page.............................passed
+And I choose the payment method cheque......................................passed
+And I confirm my order......................................................passed
+Then I should see order confirmation page...................................passed
+And validate the payment amount.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

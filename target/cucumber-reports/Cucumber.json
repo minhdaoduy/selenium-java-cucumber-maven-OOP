@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2154436985,
+              "duration": 374388,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Booking scenario",
+        "line": 25,
+        "name": "Purchase successfull scenario",
         "description": "",
-        "id": "booking-feature;booking-scenario",
+        "id": "purchase-feature;purchase-successfull-scenario;;2",
         "after": [
           {
             "result": {
-              "duration": 235391134,
+              "duration": 183737283,
               "status": "passed"
             },
             "match": {
@@ -30,51 +30,228 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3420921536,
+              "duration": 9956964843,
               "status": "passed"
             },
-            "line": 4,
-            "name": "Access booking page",
+            "line": 5,
+            "name": "I want to go to automationpractice website",
             "match": {
-              "location": "BookingSteps.access_booking_page()"
+              "location": "APHomePageSteps.java:17"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 60627,
+              "duration": 20203788,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Do some thing",
+            "line": 6,
+            "name": "verify the mystore title",
             "match": {
-              "location": "BookingSteps.do_some_thing()"
+              "location": "APHomePageSteps.java:23"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7597390822,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on sign in",
+            "match": {
+              "location": "APHomePageSteps.java:29"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 40363,
+              "duration": 7903317,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Verify something",
+            "line": 8,
+            "name": "I should see the login page",
             "match": {
-              "location": "BookingSteps.verify_something()"
+              "location": "APSignInPageSteps.java:17"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6420853202,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter \"Minh\" login credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Minh",
+                  "offset": 9
+                }
+              ],
+              "location": "APSignInPageSteps.java:23"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5785542,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see the my account page",
+            "match": {
+              "location": "APMyAccountPageSteps.java:15"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13000683101,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I choose the option women and choose tshirts",
+            "match": {
+              "location": "APMyAccountPageSteps.java:21"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5853561,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see the tshirts section",
+            "match": {
+              "location": "APTshirtsSectionPageSteps.java:15"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 86374725,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I choose medium size",
+            "match": {
+              "location": "APTshirtsSectionPageSteps.java:21"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5181027657,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I add the faded short sleeve tshirt to the cart",
+            "match": {
+              "location": "APTshirtsSectionPageSteps.java:27"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4669880728,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I choose proceed to checkout on tshirts selection page",
+            "match": {
+              "location": "APTshirtsSectionPageSteps.java:33"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6340029,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see my order page",
+            "match": {
+              "location": "APOrderPageSteps.java:16"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6355065473,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I choose proceed to checkout on order page",
+            "match": {
+              "location": "APOrderPageSteps.java:22"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1494329080,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I choose the payment method cheque",
+            "match": {
+              "location": "APOrderPageSteps.java:31"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7730138504,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I confirm my order",
+            "match": {
+              "location": "APOrderPageSteps.java:37"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28665166,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should see order confirmation page",
+            "match": {
+              "location": "APOrderConfirmationPageSteps.java:16"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36801655,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "validate the payment amount",
+            "match": {
+              "location": "APOrderConfirmationPageSteps.java:22"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Booking feature",
-    "description": "",
-    "id": "booking-feature",
+    "name": "Purchase feature",
+    "description": "I want to make a purchase on automationpractice website",
+    "id": "purchase-feature",
     "keyword": "Feature",
-    "uri": "src/test/resources/functionalTests/Booking.feature"
+    "uri": "src/test/resources/functionalTests/Purchase.feature"
   }
 ]

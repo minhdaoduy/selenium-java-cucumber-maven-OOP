@@ -22,5 +22,5 @@ Feature: Purchase feature
 
     Examples: 
       | customer |
-      | ishan  |
+      | Minh  |
       
