@@ -1,5 +1,6 @@
 package pageobjects;
 
+import Base.BaseClass;
 import org.openqa.selenium.WebDriver;
 
 import selenium.Helper;
@@ -30,9 +31,9 @@ public class APSignInPage {
 	
 	public void signInOperation(Customer customer)
 	{
-		baseClass.setTextByXpath(email, customer.emailAddress);;
-		baseClass.setTextByXpath(password, customer.password);;
-		baseClass.clickByXpath(signIn);
+		baseClass.setText(email, customer.emailAddress);;
+		baseClass.setText(password, customer.password);;
+		baseClass.clickElement(signIn);
 	}
 
 }

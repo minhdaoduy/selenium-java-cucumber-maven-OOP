@@ -6,13 +6,11 @@ import pageobjects.APHomePage;
 
 public class APHomePageSteps implements En {
 
-  TestContext testContext;
   APHomePage homePage;
 
   public APHomePageSteps(TestContext context) {
 
-    testContext = context;
-    homePage = testContext.getPageObjectManager().getAPHomePage();
+    homePage = context.getPageObjectManager().getAPHomePage();
 
     Given(
         "^I want to go to automationpractice website$",

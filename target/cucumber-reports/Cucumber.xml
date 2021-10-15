@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="62.788373">
-<testcase classname="Purchase feature" name="Purchase successfull scenario" time="62.788373">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.448098">
+<testcase classname="Purchase feature" name="Purchase successfull scenario" time="30.448098">
 <system-out><![CDATA[Given I want to go to automationpractice website............................passed
 And verify the mystore title................................................passed
 When I click on sign in.....................................................passed

@@ -31,19 +31,52 @@ public class Helper{
 		softAssert.assertTrue(new WebDriverWait(driver, 30).until(ExpectedConditions.urlContains(expectedURL)));
 		softAssert.assertAll();
 	}
-	
-	public static WebElement waitForWebElementUsingXPATH(WebDriver driver, String xpath, int time)
+	public static By getLocator(WebDriver driver, String how, String locator, int time)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, System.currentTimeMillis());
-		return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+		switch (how) {
+			case "xpath":
+				return By.xpath(locator);
+			case "css":
+				return By.cssSelector(locator);
+			case "name":
+				return By.name(locator);
+			case "id":
+				return By.id(locator);
+			case "class":
+				return By.className(locator);
+			default: return By.linkText(locator);
+		}
 	}
-	
-	public static WebElement waitForWebElementUsingCSS(WebDriver driver, String css, int time)
+
+	public static WebElement waitForWebElementEnable(WebDriver driver, String how, String locator, int time)
 	{
+		By by = getLocator(driver,how, locator,time);
 		WebDriverWait wait = new WebDriverWait(driver, time);
-		return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(css)));
+		return wait.until(ExpectedConditions.elementToBeClickable(by));
+
 	}
-	
+
+	public static WebElement waitForElementPresent(WebDriver driver, String how, String locator, int timeout){
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
+	}
+
+	public static boolean verifyElementEnable(WebDriver driver, String how, String locator, String status, int timeout){
+		waitForElementPresent(driver,how,locator,60);
+		By by = getLocator(driver,how, locator,timeout);
+		switch (status) {
+			case "enabled":
+				return  driver.findElement(by).isEnabled();
+			case "displayed":
+				return  driver.findElement(by).isDisplayed();
+			default: return  driver.findElement(by).isSelected();
+		}
+	}
+
+
+
+
+
 	public static WebElement waitForWebElement(WebDriver driver, By by,int time)
 	{
 		WebDriverWait wait=new WebDriverWait(driver, time);

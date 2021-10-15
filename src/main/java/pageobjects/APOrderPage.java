@@ -1,9 +1,7 @@
 package pageobjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+import Base.BaseClass;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import selenium.Helper;
 
@@ -36,22 +34,22 @@ public class APOrderPage {
 	{
 		//WebElement body = driver.findElement(By.cssSelector("body"));
 		//body.sendKeys(Keys.PAGE_DOWN);
-		baseClass.clickByXpath(proceedToCheckout);
+		baseClass.clickElement(proceedToCheckout);
 	}
 	
 	public void agreeTermsAndConditions()
 	{
-		baseClass.clickByXpath(readTheTerms);
+		baseClass.clickElement(readTheTerms);
 	}
 	
 	public void selectPayByCheckMethod()
 	{
-		baseClass.clickByXpath(payByCheck);
+		baseClass.clickElement(payByCheck);
 	}
 	
 	public void selectConfirmMyOrder()
 	{
-		baseClass.clickByXpath(confirmOrder);
+		baseClass.clickElement(confirmOrder);
 	}
 
 }

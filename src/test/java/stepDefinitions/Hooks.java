@@ -22,7 +22,6 @@ public class Hooks {
   public void beforeScenario(Scenario scenario) {
     System.out.println("test context: " + testContext);
     // Reporter.assignAuthor("praveendandu");
-    //    WebDriverManager webDriverManager = new WebDriverManager();
   }
 
   @After

@@ -1,5 +1,6 @@
 package pageobjects;
 
+import Base.BaseClass;
 import org.openqa.selenium.WebDriver;
 
 import selenium.Helper;
@@ -25,6 +26,6 @@ public class APMyAccountPage {
 
   public void navigateTo_TshirtsPage() {
     baseClass.mouseOver(women);
-    baseClass.clickByXpath(tShirts);
+    baseClass.clickElement(tShirts);
   }
 }

@@ -6,12 +6,10 @@ import pageobjects.APOrderConfirmationPage;
 
 public class APOrderConfirmationPageSteps implements En {
 
-  TestContext testContext;
   APOrderConfirmationPage orderConfirmationPage;
 
   public APOrderConfirmationPageSteps(TestContext context) {
-    testContext = context;
-    orderConfirmationPage = testContext.getPageObjectManager().getAPOrderConfirmationPage();
+    orderConfirmationPage = context.getPageObjectManager().getAPOrderConfirmationPage();
 
     Then(
         "^I should see order confirmation page$",

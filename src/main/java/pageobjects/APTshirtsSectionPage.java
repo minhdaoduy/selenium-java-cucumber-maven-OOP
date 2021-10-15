@@ -1,8 +1,8 @@
 package pageobjects;
 
+import Base.BaseClass;
 import org.openqa.selenium.WebDriver;
 
-import cucumber.api.java.en.Then;
 import selenium.Helper;
 
 public class APTshirtsSectionPage {
@@ -32,18 +32,18 @@ public class APTshirtsSectionPage {
 	
 	public void chooseMediumSize()
 	{
-		baseClass.clickByXpath(tshirtMediumSize);
+		baseClass.clickElement(tshirtMediumSize);
 	}
 	
 	public void addFadedTshirtToCart()
 	{
 		baseClass.mouseOver(mouseoverFadedTshirt);
-		baseClass.clickByXpath(addToCart);
+		baseClass.clickElement(addToCart);
 	}
 	
 	public void selectProceedToCheckout()
 	{
-		baseClass.clickByXpath(proceedToCheckout);
+		baseClass.clickElement(proceedToCheckout);
 	}
 
 }

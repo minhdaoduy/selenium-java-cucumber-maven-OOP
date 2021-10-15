@@ -5,12 +5,10 @@ import cucumber.api.java8.En;
 import pageobjects.APTshirtsSectionPage;
 
 public class APTshirtsSectionPageSteps implements En {
-  TestContext testContext;
   APTshirtsSectionPage tshirtsSectionPage;
 
   public APTshirtsSectionPageSteps(TestContext context) {
-    testContext = context;
-    tshirtsSectionPage = testContext.getPageObjectManager().getAPTshirtsSectionPage();
+    tshirtsSectionPage = context.getPageObjectManager().getAPTshirtsSectionPage();
 
     Then(
         "^I should see the tshirts section$",

@@ -1,13 +1,9 @@
 package pageobjects;
 
 
-import managers.FileReaderManager;
+import Base.BaseClass;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import selenium.Helper;
-import testDataTypes.Customer;
-
 
 public class Booking {
 	WebDriver driver;

@@ -1,6 +1,7 @@
 package pageobjects;
 
 
+import Base.BaseClass;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -65,28 +66,28 @@ public class LoginPage{
 	public void typeUserName(String uname)
 	{
 		log.info("Enter the username");
-		baseClass.setTextByXpath(username,uname);
+		baseClass.setText(username,uname);
 		log.info("Entered the username");
 	}
 	
 	public void clickUserNameContinueButton()
 	{
 		log.info("Username continue button is clicking");
-		baseClass.clickByXpath(usernamecontinue_button);
+		baseClass.clickElement(usernamecontinue_button);
 		log.info("Username continue button is clicked");
 	}
 	
 	public void typePassword(String pword)
 	{
 		log.info("Enter the password");
-		baseClass.setTextByXpath(password,pword);
+		baseClass.setText(password,pword);
 		log.info("Entered the password");
 	}
 	
 	public void clickLoginButton()
 	{
 		log.info("Login button is clicking");
-		baseClass.clickByXpath(login);
+		baseClass.clickElement(login);
 		log.info("Login button is clicked");
 	}
 

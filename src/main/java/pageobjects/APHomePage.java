@@ -1,7 +1,7 @@
 package pageobjects;
 
+import Base.BaseClass;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 import managers.FileReaderManager;
 import selenium.Helper;
@@ -34,7 +34,9 @@ public class APHomePage {
 	
 	public void navigateTo_LoginPage()
 	{
-		baseClass.clickByXpath(signIn);
+
+//		baseClass.clickElement(signIn);
+		baseClass.clickElement("xpath",signIn,20);
 	}
 
 }

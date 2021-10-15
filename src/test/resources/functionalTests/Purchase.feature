@@ -1,6 +1,7 @@
 Feature: Purchase feature
   I want to make a purchase on automationpractice website
 
+  @SmokeTest @End2End @debug
   Scenario Outline: Purchase successfull scenario
     Given I want to go to automationpractice website
     And verify the mystore title

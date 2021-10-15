@@ -6,12 +6,10 @@ import pageobjects.APOrderPage;
 
 public class APOrderPageSteps implements En {
 
-  TestContext testContext;
   APOrderPage orderPage;
 
   public APOrderPageSteps(TestContext context) {
-    testContext = context;
-    orderPage = testContext.getPageObjectManager().getAPOrderPage();
+    orderPage = context.getPageObjectManager().getAPOrderPage();
 
     Then(
         "^I should see my order page$",

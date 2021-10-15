@@ -5,13 +5,11 @@ import cucumber.api.java8.En;
 import pageobjects.Booking;
 
 public class BookingSteps implements En {
-  TestContext testContext;
   Booking booking;
 
   public BookingSteps(TestContext context) {
 
-    testContext = context;
-    booking = testContext.getPageObjectManager().getBooking();
+    booking = context.getPageObjectManager().getBooking();
 
     Given(
         "^Access booking page$",

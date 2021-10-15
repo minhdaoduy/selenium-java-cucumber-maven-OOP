@@ -5,12 +5,10 @@ import cucumber.api.java8.En;
 import pageobjects.APMyAccountPage;
 
 public class APMyAccountPageSteps implements En {
-  TestContext testContext;
   APMyAccountPage myAccountPage;
 
   public APMyAccountPageSteps(TestContext context) {
-    testContext = context;
-    myAccountPage = testContext.getPageObjectManager().getAPMyAccountPage();
+    myAccountPage = context.getPageObjectManager().getAPMyAccountPage();
 
     Then(
         "^I should see the my account page$",
